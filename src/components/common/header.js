@@ -7,6 +7,7 @@ var Link = Router.Link
 var Header = React.createClass({
   render: function () {
     return (
+
         <nav className='navbar navbar-default'>
           <div className='container-fluid'>
               <Link to='app' className='navbar-brand'>
@@ -19,6 +20,7 @@ var Header = React.createClass({
               </ul>
           </div>
         </nav>
+
     )
   }
 })
