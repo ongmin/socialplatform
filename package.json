@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && gulp"
+    "start": "npm install && gulp",
+    "test": "standard"
   },
   "author": "Cory House",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "reactify": "^1.1.1",
+    "standard": "^5.4.1",
     "toastr": "^2.1.0",
     "vinyl-source-stream": "^1.1.0"
   }
