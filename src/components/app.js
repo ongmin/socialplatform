@@ -11,10 +11,15 @@ var App = React.createClass({
     return (
       <div>
         <Header/>
-        <Sidebar/>
-        <div className='container-fluid'>
+
+        <div className='special-container'>
+
+          <Sidebar/>
+          <div className='content-area'>
           <RouteHandler/>
+          </div>
         </div>
+
       </div>
     )
   }
