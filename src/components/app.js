@@ -2,6 +2,7 @@
 
 var React = require('react')
 var Header = require('./common/header')
+var Sidebar = require('./common/sidebar')
 var RouteHandler = require('react-router').RouteHandler
 $ = jQuery = require('jquery')
 
@@ -10,6 +11,7 @@ var App = React.createClass({
     return (
       <div>
         <Header/>
+        <Sidebar/>
         <div className='container-fluid'>
           <RouteHandler/>
         </div>
