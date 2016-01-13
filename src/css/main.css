@@ -41,6 +41,33 @@ body {
   width: 100%;
 }
 
+.pageWrapper {
+  padding: 20px;
+}
+
+.groupButtons {
+  margin-top: 40px;
+}
+
+#button-submit {
+  margin-left: 10px;
+}
+
+#input-picture {
+  margin: 40px 0px 40px 0px;
+  position: relative;
+}
+
+#input-picture::before {
+  content: attr(label);
+  position: absolute;
+  top: -25px;
+  left: 2px;
+  font-weight: bold;
+}
+
+
+
 /* PATCH */
 .special-container {
   display: block;

@@ -13,7 +13,6 @@ var App = React.createClass({
         <Header/>
 
         <div className='special-container'>
-
           <Sidebar/>
           <div className='content-area'>
           <RouteHandler/>

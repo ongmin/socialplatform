@@ -22,6 +22,7 @@ var Header = React.createClass({
           <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav navbar-right">
               <li><Link to='app'>Home</Link></li>
+              <li><Link to='addUser'>Create Profile</Link></li>
               <li><Link to='authors'>Authors</Link></li>
               <li><Link to='about'>About</Link></li>
             </ul>
