@@ -1,10 +1,10 @@
-"use strict";
+"use strict"
 
-var React = require('react');
-var Router = require('react-router');
-var Link = Router.Link;
-var AuthorActions = require('../../actions/authorActions');
-var toastr = require('toastr');
+var React = require('react')
+var Router = require('react-router')
+var Link = Router.Link
+var AuthorActions = require('../../actions/authorActions')
+var toastr = require('toastr')
 
 var AuthorList = React.createClass({
 	propTypes: {
@@ -12,9 +12,9 @@ var AuthorList = React.createClass({
 	},
 
 	deleteAuthor: function(id, event) {
-		event.preventDefault();
-		AuthorActions.deleteAuthor(id);
-		toastr.success('Author Deleted');
+		event.preventDefault()
+		AuthorActions.deleteAuthor(id)
+		toastr.success('Author Deleted')
 	},
 
 	render: function() {
@@ -25,8 +25,8 @@ var AuthorList = React.createClass({
 					<td><Link to="manageAuthor" params={{id: author.id}}>{author.id}</Link></td>
 					<td>{author.firstName} {author.lastName}</td>
 				</tr>
-			);
-		};
+			)
+		}
 
 		return (
 			<div>
@@ -41,8 +41,8 @@ var AuthorList = React.createClass({
 					</tbody>
 				</table>
 			</div>
-		);
+		)
 	}
-});
+})
 
-module.exports = AuthorList;
+module.exports = AuthorList

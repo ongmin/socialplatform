@@ -1,20 +1,20 @@
-"use strict";
+"use strict"
 
-var React = require('react');
+var React = require('react')
 
 var About = React.createClass({
 	statics: {
 		willTransitionTo: function(transition, params, query, callback) {
 			if (!confirm('Are you sure you want to read a page that\'s this boring?')) {
-				transition.about();
+				transition.about()
 			} else {
-				callback();
+				callback()
 			}
 		},
-		
+
 		willTransitionFrom: function(transition, component) {
 			if (!confirm('Are you sure you want to leave a page that\'s this exciting?')) {
-				transition.about();
+				transition.about()
 			}
 		}
 	},
@@ -35,8 +35,8 @@ var About = React.createClass({
 					</ul>
 				</p>
 			</div>
-		); 
+		)
 	}
-});
+})
 
-module.exports = About;
+module.exports = About

@@ -1,6 +1,6 @@
-"use strict";
+"use strict"
 
-var React = require('react');
+var React = require('react')
 
 var Input = React.createClass({
   propTypes: {
@@ -13,11 +13,11 @@ var Input = React.createClass({
   },
 
   render: function () {
-    var wrapperClass = 'form-group';
+    var wrapperClass = 'form-group'
     if (this.props.error && this.props.error.length > 0) {
-      wrapperClass += " " + 'has-error';
+      wrapperClass += " " + 'has-error'
     }
-    
+
     return (
      <div className={wrapperClass}>
         <label htmlFor={this.props.name}>{this.props.label}</label>
@@ -32,8 +32,8 @@ var Input = React.createClass({
           <div className="input">{this.props.error}</div>
         </div>
       </div>
-    );
+    )
   }
-});
+})
 
-module.exports = Input;
+module.exports = Input

@@ -1,7 +1,7 @@
-"use strict";
+"use strict"
 
-var React = require('react');
-var Input = require('../common/textInput');
+var React = require('react')
+var Input = require('../common/textInput')
 
 var AuthorForm = React.createClass({
 	propTypes: {
@@ -31,8 +31,8 @@ var AuthorForm = React.createClass({
 
 				<input type="submit" value="Save" className="btn btn-default" onClick={this.props.onSave} />
 			</form>
-		);
+		)
 	}
-});
+})
 
-module.exports = AuthorForm;
+module.exports = AuthorForm

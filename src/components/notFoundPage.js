@@ -1,7 +1,7 @@
-"use strict";
+"use strict"
 
-var React = require('react');
-var Link = require('react-router').Link;
+var React = require('react')
+var Link = require('react-router').Link
 
 var NotFoundPage = React.createClass({
 	render: function() {
@@ -11,8 +11,8 @@ var NotFoundPage = React.createClass({
 				<p>Whoops! Sorry, there is nothing to see here.</p>
 				<p><Link to="app">Back to Home</Link></p>
 			</div>
-		);
+		)
 	}
-});
+})
 
-module.exports = NotFoundPage;
+module.exports = NotFoundPage

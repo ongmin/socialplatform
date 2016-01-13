@@ -1,8 +1,8 @@
-"use strict";
+"use strict"
 
-var React = require('react');
-var Router = require('react-router');
-var Link = Router.Link;
+var React = require('react')
+var Router = require('react-router')
+var Link = Router.Link
 
 var Header = React.createClass({
 	render: function() {
@@ -19,8 +19,8 @@ var Header = React.createClass({
               </ul>
           </div>
         </nav>
-		);
+		)
 	}
-});
+})
 
-module.exports = Header;
+module.exports = Header

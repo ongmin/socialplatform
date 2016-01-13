@@ -1,8 +1,8 @@
-"use strict";
+"use strict"
 
-var Dispatcher = require('../dispatcher/appDispatcher');
-var ActionTypes = require('../constants/actionTypes');
-var AuthorApi = require('../api/authorApi');
+var Dispatcher = require('../dispatcher/appDispatcher')
+var ActionTypes = require('../constants/actionTypes')
+var AuthorApi = require('../api/authorApi')
 
 var InitializeActions = {
 	initApp: function() {
@@ -11,8 +11,8 @@ var InitializeActions = {
 			initialData: {
 				authors: AuthorApi.getAllAuthors()
 			}
-		});
+		})
 	}
-};
+}
 
-module.exports = InitializeActions;
+module.exports = InitializeActions
