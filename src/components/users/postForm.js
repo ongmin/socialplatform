@@ -4,12 +4,12 @@ var React = require('react')
 var Input = require('../common/textInput')
 
 var PostForm = React.createClass({
-  // propTypes: {
-  //   author:	React.PropTypes.object.isRequired,
-  //   onSave:	React.PropTypes.func.isRequired,
-  //   onChange: React.PropTypes.func.isRequired,
-  //   errors: React.PropTypes.object
-  // },
+  propTypes: {
+    post:	React.PropTypes.object.isRequired,
+    onSave:	React.PropTypes.func.isRequired,
+    onChange: React.PropTypes.func.isRequired,
+    errors: React.PropTypes.object
+  },
 
   render: function () {
     return (
@@ -21,9 +21,16 @@ var PostForm = React.createClass({
         <Input
           name='currentLocation'
           label='Current Location'
-          value={this.props.author.currentLocation}
+          value={this.props.post.userName}
           onChange={this.props.onChange}
-          error={this.props.errors.currentLocation} />
+          error={this.props.errors.userName} />
+
+        <Input
+          name='currentLocation'
+          label='Current Location'
+          value={this.props.post.content}
+          onChange={this.props.onChange}
+          error={this.props.errors.content} />
 
         <input
           name='inputPicture'
@@ -31,9 +38,9 @@ var PostForm = React.createClass({
           id='input-picture'
           className='input-file'
           type='file'
-          value={this.props.author.currentLocation}
+          value={this.props.post.picture}
           onChange={this.props.onChange}
-          error={this.props.errors.currentLocation} />
+          error={this.props.errors.picture} />
 
         <div className='groupWrapper groupButtons'>
 

@@ -8,9 +8,10 @@ var Home = React.createClass({
   render: function () {
     return (
       <div className='jumbotron'>
-        <h1>Pluralsight Administration</h1>
-        <p>React, React Router, and Flux for ultra-responsive web apps.</p>
-        <Link to='about' className='btn btn-primary btn-lg'>Learn more</Link>
+        <h1>Welcome to The Community</h1>
+        <p>Letsgetsocial is a generic framework for creating your own interest-based community and surrounding yourself with people you dig.</p>
+        <p>Built with React, React Router, and Flux.</p>
+        <Link to='about' className='btn btn-primary btn-lg'>Get Started</Link>
       </div>
     )
   }

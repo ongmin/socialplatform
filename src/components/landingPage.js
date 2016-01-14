@@ -3,36 +3,34 @@
 var React = require('react')
 var Router = require('react-router')
 var Link = require('react-router').Link
-var AuthorStore = require('../stores/authorStore')
-var AuthorActions = require('../actions/authorActions')
+var PostStore = require('../stores/postStore')
+var PostActions = require('../actions/postActions')
 var PostFeed = require('./users/postFeed')
 var PostForm = require('./users/postForm')
 
 var LandingPage = React.createClass({
   getInitialState: function () {
     return {
-      authors: AuthorStore.getAllAuthors()
+      posts: PostStore.getAllPosts()
     }
   },
 
   componentWillMount: function () {
-    AuthorStore.addChangeListener(this._onChange)
+    PostStore.addChangeListener(this._onChange)
   },
 
   // Clean up when this component is unmounted
   componentWillUnmount: function () {
-    AuthorStore.removeChangeListener(this._onChange)
+    PostStore.removeChangeListener(this._onChange)
   },
 
   _onChange: function () {
-    this.setState({ authors: AuthorStore.getAllAuthors() })
+    this.setState({ posts: PostStore.getAllPosts() })
   },
 
   render: function () {
     return (
       <div>
-        <h1>Landing Page</h1>
-        <PostForm />
         <PostFeed />
       </div>
     )

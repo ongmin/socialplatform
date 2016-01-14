@@ -3,13 +3,13 @@
 var React = require('react')
 var Router = require('react-router')
 var Link = Router.Link
-var AuthorActions = require('../../actions/authorActions')
+var PostActions = require('../../actions/postActions')
 var toastr = require('toastr')
 
 var PostFeed = React.createClass({
-  // # propTypes: {
-  // #   authors: React.PropTypes.array.isRequired
-  // # },
+  propTypes: {
+    posts: React.PropTypes.array.isRequired
+  },
 
   render: function () {
     return (

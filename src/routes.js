@@ -19,7 +19,6 @@ var routes = (
     <Redirect from='about-us' to='about' />
     <Redirect from='awthurs' to='authors' />
     <Redirect from='about/*' to='about' />
-
     <Route name='landingPage' path='landingpage' handler={require('./components/landingPage')} />
     <Route name='addUser' path='user' handler={require('./components/users/manageProfilePage')} />
   </Route>
