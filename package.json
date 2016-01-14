@@ -1,5 +1,5 @@
 {
-  "name": "psadmin",
+  "name": "reactproject",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,9 +20,9 @@
     "jquery": "^2.1.4",
     "lodash": "^3.10.0",
     "object-assign": "^3.0.0",
-    "react": "^0.13.3",
+    "react": "^0.14.6",
     "react-geosuggest": "^1.14.0",
-    "react-router": "^0.13.3",
+    "react-router": "^0.13.5",
     "reactify": "^1.1.1",
     "standard": "^5.4.1",
     "toastr": "^2.1.0",

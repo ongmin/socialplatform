@@ -22,7 +22,7 @@ var config = {
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
       'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
       'node_modules/toastr/toastr.css',
-      './src/css/*.css'
+      './src/css/*.css',
     ],
     dist: './dist',
     mainJs: './src/main.js'
@@ -58,6 +58,7 @@ gulp.task('js', function () {
     .pipe(source('bundle.js'))
     .pipe(gulp.dest(config.paths.dist + '/scripts'))
     .pipe(connect.reload())
+
 })
 
 gulp.task('css', function () {
