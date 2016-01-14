@@ -17,7 +17,6 @@ var routes = (
     <Route name='about' handler={require('./components/about/aboutPage')} />
     <NotFoundRoute handler={require('./components/notFoundPage')} />
     <Redirect from='about-us' to='about' />
-    <Redirect from='awthurs' to='authors' />
     <Redirect from='about/*' to='about' />
     <Route name='landingPage' path='landingpage' handler={require('./components/landingPage')} />
     <Route name='managePost' path='post/' handler={require('./components/users/managePostPage')} />
