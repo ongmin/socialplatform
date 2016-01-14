@@ -19,14 +19,6 @@ var ProfileForm = React.createClass({
         <h1>Create your profile</h1>
 
         <Input
-            name='userName'
-            label='User Name'
-            value={this.props.author.userName}
-            onChange={this.props.onChange}
-            error={this.props.errors.userName}
-            className='form-control input-md' />
-
-        <Input
           name='firstName'
           label='First Name'
           value={this.props.author.firstName}
@@ -41,18 +33,11 @@ var ProfileForm = React.createClass({
           error={this.props.errors.lastName} />
 
         <Input
-          name='homeLocation'
-          label='Location'
-          value={this.props.author.homeLocation}
+          name='city'
+          label='City'
+          value={this.props.author.city}
           onChange={this.props.onChange}
-          error={this.props.errors.homeLocation} />
-
-        <Input
-          name='currentLocation'
-          label='Current Location'
-          value={this.props.author.currentLocation}
-          onChange={this.props.onChange}
-          error={this.props.errors.currentLocation} />
+          error={this.props.errors.city} />
 
         <input
           name='inputPicture'
