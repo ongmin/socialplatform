@@ -29,7 +29,7 @@ var AuthorPage = React.createClass({
 
   render: function () {
     return (
-      <div>
+      <div className='pageWrapper'>
         <h1>Authors</h1>
         <Link to='addAuthor' className='btn btn-default'>Add Author</Link>
         <AuthorList authors={this.state.authors} />
