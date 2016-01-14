@@ -23,6 +23,7 @@ var Header = React.createClass({
             <ul className="nav navbar-nav navbar-right">
               <li><Link to='app'>Home</Link></li>
               <li><Link to='landingPage'>Landing Page</Link></li>
+              <li><Link to='managePost'>Post</Link></li>
               <li><Link to='addUser'>Create Profile</Link></li>
               <li><Link to='authors'>Authors</Link></li>
               <li><Link to='about'>About</Link></li>

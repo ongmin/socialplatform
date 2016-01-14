@@ -16,18 +16,18 @@ var PostForm = React.createClass({
 
       <form className='pageWrapper'>
         <fieldset>
-        <h1>Make A Post</h1>
+        <h1>Manage Post</h1>
 
         <Input
-          name='currentLocation'
-          label='Current Location'
+          name='userName'
+          label='Username'
           value={this.props.post.userName}
           onChange={this.props.onChange}
           error={this.props.errors.userName} />
 
         <Input
-          name='currentLocation'
-          label='Current Location'
+          name='content'
+          label='Post'
           value={this.props.post.content}
           onChange={this.props.onChange}
           error={this.props.errors.content} />

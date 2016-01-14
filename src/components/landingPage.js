@@ -6,7 +6,6 @@ var Link = require('react-router').Link
 var PostStore = require('../stores/postStore')
 var PostActions = require('../actions/postActions')
 var PostFeed = require('./users/postFeed')
-var PostForm = require('./users/postForm')
 
 var LandingPage = React.createClass({
   getInitialState: function () {
