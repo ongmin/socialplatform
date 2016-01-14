@@ -8,6 +8,50 @@ body {
 }
 
 
+
+/*Facebook colourings*/
+
+@font-face {
+  font-family:facebook;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23596/facebook-letter-faces.ttf);
+}
+
+.fb {
+  font-family:facebook;
+  font-size:15vmax;
+  color:white;
+}
+
+.fb-text {
+  font-family:facebook;
+  font: 15px;
+  color:white;
+}
+
+.fb .navbar {
+  font-family:facebook;
+  color:white;
+}
+
+
+.fb {
+  text-align:center;
+  line-height: calc(100vh - 50px);
+
+  background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);
+  user-select:none;
+  cursor:default;
+}
+
+.fb-container {
+  width: 100%;
+}
+
+
+.sidebar-text {
+  padding-left: 7px;
+  padding-bottom: 5px;
+}
 /*
  * Global add-ons
  */
@@ -42,7 +86,7 @@ body {
 }
 
 .pageWrapper {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .groupButtons {
@@ -86,7 +130,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-right: 1px solid #eee;
+    border-right: 0px solid #eee;
   }
 
   .special-container {
@@ -111,7 +155,7 @@ body {
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
   color: #fff;
-  background-color: #428bca;
+  background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);
 }
 
 

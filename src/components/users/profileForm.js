@@ -43,9 +43,9 @@ var ProfileForm = React.createClass({
           id='input-picture'
           className='input-file'
           type='file'
-          value={this.props.author.currentLocation}
+          value={this.props.author.profileImage}
           onChange={this.props.onChange}
-          error={this.props.errors.currentLocation} />
+          error={this.props.errors.profileImage} />
 
         <div className='groupWrapper groupButtons'>
           <input
