@@ -2,6 +2,7 @@
 
 var React = require('react')
 var Input = require('../common/textInput')
+var GeoApp = require('react-geosuggest')
 
 var ProfileForm = React.createClass({
   propTypes: {
@@ -19,14 +20,6 @@ var ProfileForm = React.createClass({
         <h1>Create your profile</h1>
 
         <Input
-            name='userName'
-            label='User Name'
-            value={this.props.author.userName}
-            onChange={this.props.onChange}
-            error={this.props.errors.userName}
-            className='form-control input-md' />
-
-        <Input
           name='firstName'
           label='First Name'
           value={this.props.author.firstName}
@@ -40,19 +33,9 @@ var ProfileForm = React.createClass({
           onChange={this.props.onChange}
           error={this.props.errors.lastName} />
 
-        <Input
-          name='homeLocation'
-          label='Location'
-          value={this.props.author.homeLocation}
-          onChange={this.props.onChange}
-          error={this.props.errors.homeLocation} />
-
-        <Input
-          name='currentLocation'
-          label='Current Location'
-          value={this.props.author.currentLocation}
-          onChange={this.props.onChange}
-          error={this.props.errors.currentLocation} />
+        <GeoApp
+          placeholder='Where are you from?'
+          />
 
         <input
           name='inputPicture'

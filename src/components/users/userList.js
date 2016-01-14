@@ -22,8 +22,9 @@ var AuthorList = React.createClass({
       return (
         <tr key={user.id}>
           <td><a href='#' onClick={this.deleteAuthor.bind(this, user.id)}>Delete</a></td>
-          <td><Link to='manageAuthor' params={{id: user.id}}>{user.id}</Link></td>
+          <td><Link to='manageProfilePage' params={{id: user.id}}>{user.id}</Link></td>
           <td>{user.firstName} {user.lastName}</td>
+          <td>{user.city}</td>
         </tr>
       )
     }
@@ -35,6 +36,7 @@ var AuthorList = React.createClass({
             <th></th>
             <th>ID</th>
             <th>Name</th>
+            <th>City</th>
           </thead>
           <tbody>
             {this.props.authors.map(createUserRow, this)}
