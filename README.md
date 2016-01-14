@@ -1,15 +1,9 @@
-Explanations of the technologies used
-A couple of paragraphs about the general approach you took
-Installation instructions for any dependencies
-GitHub Pull Requests with code review reflecting progress
-(Closed) GitHub Issues for any unsolved problems or major hurdles your team had to overcome
+# Social platform
 
-# Author data list
-
-A [React](http://facebook.github.io/react/)-based single app page for authors.
+A [React](http://facebook.github.io/react/)-based single app page for authors. Authors can register and share documents and comments. A Google Maps API also helps in the registration process by autocompleting the author's location as he/she types.
 
 ## Technologies Used
-This application uses the following technologies:
+We wanted to try out the entire React ecosystem. This application uses the following technologies:
 - React
 - React Router
 - Flux
