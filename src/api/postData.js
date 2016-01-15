@@ -2,25 +2,25 @@ module.exports = {
   posts:
   [
     {
-      id: '',
+      id: 'cory-house',
       userName: 'cory-house',
-      content: '',
+      content: 'Content1',
       picture: '',
-      timestamp: ''
+      timestamp: 'Today'
     },
     {
-      id: '',
+      id: 'scott-allen',
       userName: 'scott-allen',
-      content: '',
+      content: 'Content2',
       picture: '',
-      timestamp: ''
+      timestamp: 'Today'
     },
     {
-      id: '',
+      id: 'dan-wahlin',
       userName: 'dan-wahlin',
-      content: '',
+      content: 'Content2',
       picture: '',
-      timestamp: ''
+      timestamp: 'Today'
     }
   ]
 }

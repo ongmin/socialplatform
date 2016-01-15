@@ -14,7 +14,7 @@ var AuthorForm = React.createClass({
   render: function () {
     return (
       <form>
-        <h1>Manage Author</h1>
+        <h2>Posts</h2>
         <Input
           name='firstName'
           label='First Name'
@@ -30,11 +30,14 @@ var AuthorForm = React.createClass({
           error={this.props.errors.lastName} />
 
           <Input
-            name='city'
-            label='City'
-            value={this.props.author.city}
+            labelClassName='col-xs-2'
+            wrapperClassName='col-xs-10'
+            name='content'
+            label='Status'
+            type='textarea'
+            value={this.props.author.content}
             onChange={this.props.onChange}
-            error={this.props.errors.city} />
+            error={this.props.errors.content} />
 
         <input type='submit' value='Save' className='btn btn-default' onClick={this.props.onSave} />
       </form>

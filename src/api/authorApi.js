@@ -9,6 +9,10 @@ var _generateId = function (author) {
   return author.firstName.toLowerCase() + '-' + author.lastName.toLowerCase()
 }
 
+var _generateTimestamp = function (post) {
+  return (new Date()).toISOString()
+}
+
 var _clone = function (item) {
   return JSON.parse(JSON.stringify(item)) // return cloned copy so that the item is passed by value instead of by reference
 }
@@ -25,7 +29,7 @@ var AuthorApi = {
 
   saveAuthor: function (author) {
     // Pretend an ajax call to web api is made here
-    console.log('Pretend this just saved the author to the DB via AJAX call...')
+    console.log('Pretend this just saved the post to the DB... Oh! So Cool!!')
 
     if (author.id) {
       var existingAuthorIndex = _.indexOf(authors, _.find(authors, {id: author.id}))
@@ -35,6 +39,7 @@ var AuthorApi = {
       // The server would generate ids for new authors in a real app.
       // Cloning so copy returned is passed by value rather than by reference.
       author.id = _generateId(author)
+      author.timestamp = _generateTimestamp(author)
       authors.push(author)
     }
 
@@ -42,7 +47,7 @@ var AuthorApi = {
   },
 
   deleteAuthor: function (id) {
-    console.log('Pretend this just deleted the author from the DB via an AJAX call...')
+    console.log('Pretending that this just deleted the post from the DB...')
     _.remove(authors, { id: id })
   }
 }
