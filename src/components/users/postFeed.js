@@ -11,16 +11,38 @@ var PostFeed = React.createClass({
     posts: React.PropTypes.array.isRequired
   },
 
+  deletePost: function (id, event) {
+    event.preventDefault()
+    PostActions.deletePost(id)
+    toastr.success('Post Deleted')
+  },
+
   render: function () {
+    var createPost = function (post) {
+      return (
+        <tr key={post.id}>
+          <td><a href='#' onClick={this.deletePost.bind(this, post.id)}>Delete</a></td>
+          <td><Link to='managePost' params={{id: post.id}}>{post.id}</Link></td>
+          <td>{post.userName} {post.content}</td>
+          <td>{post.timestamp}</td>
+        </tr>
+      )
+    }
+
     return (
-      <div className='pageWrapper'>
-        <h2 className='page-header'>Landing Page</h2>
-          <div className='panel panel-info'>
-            <div className='panel-heading'>
-              <h3 className='panel-title'>firstName lastName</h3>
-            </div>
-              <div className='panel-body'>Today I ate two peanut butter jelly sandwiches.</div>
-          </div>
+
+      <div>
+        <table className='table'>
+          <thead>
+            <th></th>
+            <th>ID</th>
+            <th>Name Content</th>
+            <th>Time</th>
+          </thead>
+          <tbody>
+            {this.props.posts.map(createPost, this)}
+          </tbody>
+        </table>
       </div>
 
     )

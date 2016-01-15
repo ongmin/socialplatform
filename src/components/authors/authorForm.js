@@ -15,7 +15,7 @@ var AuthorForm = React.createClass({
   render: function () {
     return (
       <form>
-        <h1>Manage Author</h1>
+        <h2>Posts</h2>
         <Input
           name='firstName'
           label='First Name'
@@ -29,6 +29,16 @@ var AuthorForm = React.createClass({
           value={this.props.author.lastName}
           onChange={this.props.onChange}
           error={this.props.errors.lastName} />
+
+          <Input
+            labelClassName='col-xs-2'
+            wrapperClassName='col-xs-10'
+            name='content'
+            label='Status'
+            type='textarea'
+            value={this.props.author.content}
+            onChange={this.props.onChange}
+            error={this.props.errors.content} />
 
         <GeoApp />
 
