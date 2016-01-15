@@ -42,7 +42,11 @@ var AuthorForm = React.createClass({
 
         <GeoApp />
 
+      <div className='groupWrapper groupButtons'>
+
         <input type='submit' value='Save' className='btn btn-default' onClick={this.props.onSave} />
+      </div>
+
       </form>
     )
   }

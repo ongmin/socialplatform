@@ -22,7 +22,7 @@ var Header = React.createClass({
 
             <ul className='nav nav-sidebar'>
                 <li className='sidebar-text'>Your Apps</li>
-                <li><Link to='appQuoteGenerator'>Quote Generator</Link></li>
+                <li><Link to='appQuoteGenerator'>Random Cat</Link></li>
                 <li><Link to='app'>Random App</Link></li>
                 <li><Link to='app'>Random App</Link></li>
             </ul>

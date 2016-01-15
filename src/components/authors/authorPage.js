@@ -31,8 +31,7 @@ var AuthorPage = React.createClass({
   render: function () {
     return (
       <div className='pageWrapper'>
-        <h2>Manage posts</h2>
-        <Link to='addAuthor' className='btn btn-default'>Add</Link>
+        <h2>Manage posts<Link to='addAuthor' className='btn btn-default alignright'>Add</Link></h2>
         <div>
         <AuthorList authors={this.state.authors} />
         </div>
