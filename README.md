@@ -2,6 +2,8 @@
 
 A [React](http://facebook.github.io/react/)-based single app page for authors. Authors can register and share documents and comments. A Google Maps API also helps in the registration process by autocompleting the author's location as he/she types.
 
+The app is deployed [here](https://letsgetsocial.herokuapp.com/).
+
 ## Technologies Used
 We wanted to try out the entire React ecosystem. This application uses the following technologies:
 - React
