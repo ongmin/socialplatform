@@ -75,7 +75,7 @@ var ManageAuthorPage = React.createClass({
     }
 
     this.setState({dirty: false})
-    toastr.success('Author saved.')
+    toastr.success('Post saved.')
     this.transitionTo('authors')
   },
 

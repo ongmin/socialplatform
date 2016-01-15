@@ -7,24 +7,14 @@ var Link = Router.Link
 var AppQuoteGenerator = React.createClass({
   render: function () {
     return (
-
-      <div className='appQuoteGenerator'>
-      <h1>Quote generator</h1>
-        <div className='box'>
-          <div className='quote'>
-            <i className='fa fa-quote-left'></i>
-            <span id='quote'></span>
-            <i className='fa fa-quote-right'></i>
-          </div>
-          <div className='author'>
-            <span id='author'></span>
-          </div>
-        </div>
-
-        <div className='button raised' id='buttonQuoteGenerator'>
-          Generate Quote
-        </div>
-        </div>
+      <div className='pageWrapper'>
+      <div className='appRandomCat'>
+        <h2>Daily dose of kittens and cats</h2>
+        <p>
+      <a href='http://thecatapi.com'><img src='http://thecatapi.com/api/images/get?format=src&type=gif'></img></a>
+      </p>
+      </div>
+      </div>
     )
   }
 })
