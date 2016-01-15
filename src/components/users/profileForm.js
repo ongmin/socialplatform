@@ -33,9 +33,7 @@ var ProfileForm = React.createClass({
           onChange={this.props.onChange}
           error={this.props.errors.lastName} />
 
-        <GeoApp
-          placeholder='Where are you from?'
-          />
+        <GeoApp />
 
         <input
           name='inputPicture'

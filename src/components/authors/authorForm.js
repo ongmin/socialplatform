@@ -2,6 +2,7 @@
 
 var React = require('react')
 var Input = require('../common/textInput')
+var GeoApp = require('react-geosuggest')
 
 var AuthorForm = React.createClass({
   propTypes: {
@@ -38,6 +39,8 @@ var AuthorForm = React.createClass({
             value={this.props.author.content}
             onChange={this.props.onChange}
             error={this.props.errors.content} />
+
+        <GeoApp />
 
         <input type='submit' value='Save' className='btn btn-default' onClick={this.props.onSave} />
       </form>
