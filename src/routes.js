@@ -18,7 +18,9 @@ var routes = (
     <NotFoundRoute handler={require('./components/notFoundPage')} />
     <Redirect from='about-us' to='about' />
     <Redirect from='about/*' to='about' />
-
+    <Route name='landingPage' path='landingpage' handler={require('./components/landingPage')} />
+    <Route name='managePost' path='post/' handler={require('./components/users/managePostPage')} />
+    <Route name='appQuoteGenerator' path='app-quotegenerator' handler={require('./components/appQuoteGenerator')} />
     <Route name='addUser' path='user' handler={require('./components/users/manageProfilePage')} />
   </Route>
 )

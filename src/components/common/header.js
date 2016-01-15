@@ -17,13 +17,13 @@ var Header = React.createClass({
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#">Project name</a>
+            <Link to='app' className='navbar-brand'>facebook</Link>
           </div>
           <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav navbar-right">
               <li><Link to='app'>Home</Link></li>
+              <li><Link to='landingPage'>Landing Page</Link></li>
               <li><Link to='addUser'>Create Profile</Link></li>
-              <li><Link to='authors'>Authors</Link></li>
               <li><Link to='about'>About</Link></li>
             </ul>
             <form className="navbar-form navbar-right">
