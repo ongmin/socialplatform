@@ -6,6 +6,8 @@ var Link = require('react-router').Link
 var AuthorStore = require('../../stores/authorStore')
 var AuthorActions = require('../../actions/authorActions')
 var AuthorList = require('./authorList')
+var AuthorPanels = require('./authorPanels')
+var UserList = require('../users/userList')
 
 var AuthorPage = React.createClass({
   getInitialState: function () {
@@ -29,10 +31,12 @@ var AuthorPage = React.createClass({
 
   render: function () {
     return (
-      <div>
-        <h1>Authors</h1>
-        <Link to='addAuthor' className='btn btn-default'>Add Author</Link>
-        <AuthorList authors={this.state.authors} />
+      <div className='pageWrapper'>
+        <h2>Here's whats up <Link to='addAuthor' className='btn btn-default alignright'>Add</Link></h2>
+        <div className='contentSpacing'>
+        <AuthorPanels authors={this.state.authors} />
+        <userList users={this.state.users} />
+        </div>
       </div>
     )
   }

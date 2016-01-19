@@ -30,7 +30,7 @@ var LandingPage = React.createClass({
   render: function () {
     return (
       <div>
-        <PostFeed />
+        <PostFeed posts={this.state.posts} />
       </div>
     )
   }

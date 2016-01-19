@@ -8,8 +8,7 @@ var About = React.createClass({
       <div className='pageWrapper'>
         <h1>About</h1>
           <p>Letsgetsocial is a generic framework for creating your own interest-based community and surrounding yourself with people you dig.</p>
-          <p>Built with React, React Router, and Flux.</p>
-        <p>This application uses the following technologies:
+          <p>This application uses the following technologies:
           <ul>
             <li>React</li>
             <li>React Router</li>

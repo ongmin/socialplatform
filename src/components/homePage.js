@@ -9,7 +9,7 @@ var Home = React.createClass({
     return (
 
       <div className='fb-container'>
-        <div className='fb'>facebook</div>
+        <div className='fb'>fac&#601;book</div>
         <div className='fb-text'>welcome</div>
       </div>
     )

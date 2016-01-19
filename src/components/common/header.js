@@ -17,12 +17,12 @@ var Header = React.createClass({
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link to='app' className='navbar-brand'>facebook</Link>
+            <Link to='app' className='navbar-brand'>fac&#601;book</Link>
           </div>
           <div id="navbar" className="navbar-collapse collapse">
             <ul className="nav navbar-nav navbar-right">
               <li><Link to='app'>Home</Link></li>
-              <li><Link to='landingPage'>Landing Page</Link></li>
+              <li><Link to='loginPage'>Login</Link></li>
               <li><Link to='addUser'>Create Profile</Link></li>
               <li><Link to='about'>About</Link></li>
             </ul>
@@ -38,3 +38,5 @@ var Header = React.createClass({
 })
 
 module.exports = Header
+
+// <li><Link to='landingPage'>Landing Page</Link></li>
