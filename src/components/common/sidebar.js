@@ -16,7 +16,7 @@ var Header = React.createClass({
               <li className='sidebar-text'>Your Content</li>
               <li className='active'><a href='#'>Welcome <span className='sr-only'>(current)</span></a></li>
                 <li><Link to='authorsfeed'>Post Feed</Link></li>
-                <li><Link to='managePost'>Create Post</Link></li>
+                <li><Link to='addAuthor'>Create Post</Link></li>
                 <li><Link to='authors'>Super Admin</Link></li>
             </ul>
 

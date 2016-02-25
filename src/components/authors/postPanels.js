@@ -6,7 +6,7 @@ var Link = Router.Link
 var AuthorActions = require('../../actions/authorActions')
 var toastr = require('toastr')
 
-var AuthorList = React.createClass({
+var PostPanels = React.createClass({
   propTypes: {
     authors: React.PropTypes.array.isRequired
   },
@@ -21,12 +21,12 @@ var AuthorList = React.createClass({
     var createAuthorRow = function (author) {
       return (
 
-        <div className='panel panel-info'>
-          <div className='panel-heading'>{author.firstName} {author.lastName}<a href='#' className='alignright' onClick={this.deleteAuthor.bind(this, author.id)}>Delete</a></div>
-          <div className='panel-body'>
-            {author.content}
+          <div className='post-whole'>
+            <div className='post-heading'>{author.firstName} {author.lastName}<a href='#' className='alignright' onClick={this.deleteAuthor.bind(this, author.id)}>Delete</a></div>
+            <div className='post-body'>
+              {author.content}
+            </div>
           </div>
-        </div>
       )
     }
 
@@ -38,4 +38,4 @@ var AuthorList = React.createClass({
   }
 })
 
-module.exports = AuthorList
+module.exports = PostPanels

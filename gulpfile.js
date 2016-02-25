@@ -67,7 +67,6 @@ gulp.task('css', function () {
 })
 
 // Migrates images to dist folder
-// Note that I could even optimize my images here
 gulp.task('images', function () {
   gulp.src(config.paths.images)
     .pipe(gulp.dest(config.paths.dist + '/images'))
@@ -81,6 +80,7 @@ gulp.task('images', function () {
 gulp.task('watch', function () {
   gulp.watch(config.paths.html, ['html'])
   gulp.watch(config.paths.js, ['js'])
+  gulp.watch(config.paths.css, ['css'])
 })
 
 gulp.task('default', ['html', 'js', 'css', 'images', 'open', 'watch'])
