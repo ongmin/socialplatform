@@ -31,7 +31,11 @@ var AuthorPage = React.createClass({
   render: function () {
     return (
       <div className='pageWrapper'>
-        <h2>Here is what is up <Link to='addAuthor' className='btn btn-default alignright'>Add</Link></h2>
+        <Link to='addAuthor' className='btn btn-default alignright'><i className='fa fa-pencil-square-o'></i></Link>
+
+        <div className='profile-summary'>
+        </div>
+
         <div className='contentSpacing'>
 
         <div className='postfeed-wrapper'>

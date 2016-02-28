@@ -10,7 +10,7 @@ var NotFoundRoute = Router.NotFoundRoute
 
 var routes = (
   <Route name='app' path='/' handler={require('./components/app')}>
-    <DefaultRoute handler={require('./components/homePage')} />
+    <DefaultRoute handler={require('./components/authors/authorPageFeed')} />
     <NotFoundRoute handler={require('./components/notFoundPage')} />
     <Route name='authors' handler={require('./components/authors/authorPage')} />
     <Route name='authorsfeed' handler={require('./components/authors/authorPageFeed')} />
