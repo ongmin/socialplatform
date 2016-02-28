@@ -63,6 +63,7 @@ body {
 .sidebar-text {
   padding-left: 7px;
   padding-bottom: 5px;
+  color: #f4f4f4;
 }
 
 /*
@@ -135,7 +136,7 @@ body {
   .sidebar {
     width: 20%;
     position: fixed;
-    top: 51px;
+    top: 50px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -168,7 +169,7 @@ body {
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #black;
+  /*color: black;*/
   /*background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);*/
 }
 
@@ -208,7 +209,7 @@ body {
 }
 
 .post-whole {
-  border: 0.5px solid #a5a5a5;
+  border: 0.1px solid #e9e9e9;
   width: 100%;
   height: 100%;
   padding: 30px 50px 30px 50px;
@@ -217,7 +218,7 @@ body {
 }
 
 .post-left {
-  width: 100px;
+  width: 75px;
 }
 
 .post-right {
@@ -237,12 +238,13 @@ body {
 .profilepicture {
   width: 50px;
 	height: 50px;
+  margin: 0 auto;
   border-radius: 50%;
 }
 
 .post-actions .fa {
   color: #525252;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 20px;
 }
 
