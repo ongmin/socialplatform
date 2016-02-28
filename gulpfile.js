@@ -14,7 +14,6 @@ var config = {
   paths: {
     html: './src/*.html',
     js: [
-      './src/main.js',
       './src/js/*.js'
     ],
     images: './src/images/*',

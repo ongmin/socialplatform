@@ -33,7 +33,7 @@ body {
 .fb {
   font-family:facebook;
   font-size:15vmax;
-  color:white;
+  color:pink;
 }
 
 .fb-text {
@@ -128,6 +128,7 @@ body {
 /* PATCH */
 .special-container {
   display: block;
+  background-color: #f1f1f1;
 }
 
 @media (min-width: 768px) {
@@ -167,8 +168,8 @@ body {
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #fff;
-  background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);
+  color: #black;
+  /*background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);*/
 }
 
 
@@ -203,6 +204,7 @@ body {
   box-shadow: 2px 2px 5px #888;
   width: 85%;
   margin: 0 auto;
+  background-color: white;
 }
 
 .post-whole {
@@ -211,6 +213,15 @@ body {
   height: 100%;
   padding: 30px 50px 30px 50px;
   margin: 0 auto;
+  display: flex;
+}
+
+.post-left {
+  width: 100px;
+}
+
+.post-right {
+  width: 100%;
 }
 
 .post-heading {
@@ -223,6 +234,21 @@ body {
   color: #767676;
 }
 
+.profilepicture {
+  width: 50px;
+	height: 50px;
+  border-radius: 50%;
+}
+
+.post-actions .fa {
+  color: #525252;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.sidebar {
+  background-color: #8bb4e1;
+}
 
 /*<== Styling: Login Page START ==>*/
 

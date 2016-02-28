@@ -22,9 +22,13 @@ var PostPanels = React.createClass({
       return (
 
           <div className='post-whole'>
-            <div className='post-heading'>{author.firstName} {author.lastName}<a href='#' className='alignright' onClick={this.deleteAuthor.bind(this, author.id)}>Delete</a></div>
-            <div className='post-body'>
-              {author.content}
+            <div className='post-left'>
+            <img className='profilepicture' src='./images/ProfilePicturePlaceholder.jpg'></img>
+            </div>
+            <div className='post-right'>
+              <div className='post-heading'>{author.firstName} {author.lastName}<a href='#' className='alignright' onClick={this.deleteAuthor.bind(this, author.id)}>Delete</a></div>
+              <div className='post-body'>{author.content}</div>
+              <div className='post-actions'><i className='fa fa-share'></i><i className='fa fa-star'></i><i className='fa fa-retweet'>#</i><i className='fa fa-ellipsis-h'></i></div>
             </div>
           </div>
       )
