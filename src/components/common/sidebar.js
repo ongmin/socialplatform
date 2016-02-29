@@ -12,11 +12,20 @@ var Header = React.createClass({
         <div className='row'>
 
           <div className='col-sm-3 col-md-2 sidebar'>
+
+            <ul className='nav nav-sidebar'>
+              <div className='sidebar-profile'>
+                <img className='profilepicture' src='./images/ProfilePicturePlaceholder.jpg'></img>
+                  <li className='sidebar-name'>Johnny Depp</li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </ul>
+
             <ul className='nav nav-sidebar'>
               <li className='sidebar-text'>Your Content</li>
               <li className='active'><a href='#'>Welcome <span className='sr-only'>(current)</span></a></li>
                 <li><Link to='authorsfeed'>Post Feed</Link></li>
-                <li><Link to='managePost'>Create Post</Link></li>
+                <li><Link to='addAuthor'>Create Post</Link></li>
                 <li><Link to='authors'>Super Admin</Link></li>
             </ul>
 

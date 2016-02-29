@@ -21,8 +21,8 @@ var PostFeed = React.createClass({
     var createPost = function (post) {
       return (
         <tr key={post.id}>
-          <td><a href='#' onClick={this.deletePost.bind(this, post.id)}>Delete</a></td>
           <td><Link to='managePost' params={{id: post.id}}>{post.id}</Link></td>
+          <td><a href='#' onClick={this.deletePost.bind(this, post.id)}>Deleteeeee</a></td>
           <td>{post.userName} {post.content}</td>
           <td>{post.timestamp}</td>
         </tr>
