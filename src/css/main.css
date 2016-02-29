@@ -23,67 +23,46 @@ body {
 }
 
 
-/*Facebook colourings*/
+/*<== Styling: Login page ==>*/
 
-@font-face {
-  font-family:facebook;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23596/facebook-letter-faces.ttf);
-}
-
-.fb {
-  font-family:facebook;
-  font-size:15vmax;
-  color:pink;
-}
-
-.fb-text {
-  font-family:facebook;
-  font: 15px;
-  color:white;
-}
-
-.fb .navbar {
-  font-family: facebook;
-  color:white;
-}
-
-.fb {
+.login-container {
+  box-shadow: 2px 2px 5px #888;
+  background-color: white;
+  width: 30%;
+  height: 30vh;
+  margin: 0 auto;
+  margin-top: 20vh;
+  display: flex;
+  vertical-align: middle;
   text-align:center;
-  line-height: calc(100vh - 50px);
-  background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);
-  user-select:none;
-  cursor:default;
+  display: block;
 }
 
-.fb-container {
-  width: 100%;
-}
-
-.sidebar-text {
-  padding-left: 7px;
-  padding-bottom: 5px;
-  color: #f4f4f4;
+.login-text {
+  font: 2em;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /*
  * Global add-ons
  */
 
-
-
-
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
+
+/*<== Styling: Navigational Topbar ==>*/
+
 .navbar-fixed-top {
   border: 0;
+  /*Hide default border to remove 1px line*/
 }
+
 
 /*
  * Sidebar
@@ -94,8 +73,17 @@ body {
   display: none;
 }
 
+.sidebar-text {
+  padding-left: 7px;
+  padding-bottom: 5px;
+  color: #f4f4f4;
+}
+
+/*<== Styling: Main Content Area ==>*/
+
 .content-area {
   width: 100%;
+  height: calc(100vh - 50px);
 }
 
 .pageWrapper {
@@ -150,7 +138,8 @@ body {
   }
 }
 
-/* Sidebar navigation */
+/*<== Styling: Navigational Sidebar ==>*/
+
 .nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */
   margin-bottom: 20px;
@@ -168,9 +157,7 @@ body {
 }
 
 
-/*
- * Main content
- */
+/*<== Styling: Content Area ==>*/
 
 .main {
   padding: 20px;
@@ -191,8 +178,6 @@ body {
   margin-top: 0;
 }
 
-
-
 /*<== Styling: Posts in Post Feed ==>*/
 
 .fa-pencil-square-o {
@@ -210,6 +195,7 @@ body {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+
 .profile-summary {
   box-shadow: 2px 2px 5px #888;
   border: 0.1px solid #e9e9e9;
@@ -220,7 +206,6 @@ body {
   background-color: white;
 }
 
-
 .postfeed-wrapper {
   box-shadow: 2px 2px 5px #888;
   width: 85%;
@@ -229,7 +214,7 @@ body {
 }
 
 .post-whole {
-  border: 0.1px solid #e9e9e9;
+  border: 0.1px solid #f6f6f6;
   width: 100%;
   height: 100%;
   padding: 30px 50px 30px 50px;
@@ -271,109 +256,6 @@ body {
 .sidebar {
   background-color: #8bb4e1;
 }
-
-
-
-/*<== Styling: Login Page START ==>*/
-
-.login-form-wrap {
-	background: rgb(81,112,173);
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(81,112,173,1) 0%, rgba(53,84,147,1) 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(81,112,173,1)), color-stop(100%,rgba(53,84,147,1)));
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(81,112,173,1) 0%,rgba(53,84,147,1) 100%);
-	background: -o-radial-gradient(center, ellipse cover,  rgba(81,112,173,1) 0%,rgba(53,84,147,1) 100%);
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(81,112,173,1) 0%,rgba(53,84,147,1) 100%);
-	background: radial-gradient(ellipse at center,  rgba(81,112,173,1) 0%,rgba(53,84,147,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5170ad', endColorstr='#355493',GradientType=1 );
-	border:1px solid #2d416d;
-	box-shadow: 0 1px #5670A4 inset,
-				0 0 10px 5px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	position: relative;
-	width: 360px;
-	height: 380px;
-	margin: 60px auto;
-	padding: 50px 30px 0 30px;
-	text-align: center;
-	}
-
-.login-form-wrap:before {
-  background: url(http://i.imgur.com/0vLxyVB.png);
-  display: block;
-  content: '';
-  width: 58px;
-  height: 19px;
-  top: 10px;
-  left: 10px;
-  position: absolute;
-}
-
-
-.login {
-		width: 100%;
-		border: 1px solid #314d89;
-		outline: none;
-		padding: 12px 20px;
-		color: #afafaf;
-		font-weight: 400;
-	  font-family: 'Lato', sans-serif;
-    cursor:pointer;
-}
-
-
-.login .email {
-  border-bottom: none;
-  border-radius: 4px 4px 0 0;
-  padding-bottom: 13px;
-  box-shadow: 0 -1px 0 #E0E0E0 inset,
-        0 1px 2px rgba(0, 0, 0, 0.23) inset;
-}
-
-.login .password {
-  border-top: none;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.23) inset,
-        0 1px 2px rgba(255, 255, 255, 0.1);
-}
-
-
-.login-submit {
-	  font-family: 'Lato', sans-serif;
-	  font-weight: 400;
-		background: rgb(224,224,224);
-		background: -moz-linear-gradient(top,  rgba(224,224,224,1) 0%, rgba(206,206,206,1) 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,224,224,1)), color-stop(100%,rgba(206,206,206,1)));
-		background: -webkit-linear-gradient(top,  rgba(224,224,224,1) 0%,rgba(206,206,206,1) 100%);
-		background: -o-linear-gradient(top,  rgba(224,224,224,1) 0%,rgba(206,206,206,1) 100%);
-		background: -ms-linear-gradient(top,  rgba(224,224,224,1) 0%,rgba(206,206,206,1) 100%);
-		background: linear-gradient(to bottom,  rgba(224,224,224,1) 0%,rgba(206,206,206,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#cecece',GradientType=0 );
-		display: block;
-		margin: 20px auto 0 auto;
-		width: 100%;
-		border: none;
-		border-radius: 3px;
-		padding: 8px;
-		font-size: 17px;
-		color: #636363;
-		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
-		font-weight: 700;
-		box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.17),
-					0 1px 0 rgba(255, 255, 255, 0.36) inset;
-    }
-
-.login-submit:active {
-  padding-top: 9px;
-  padding-bottom: 7px;
-  background:#C9C9C9;
-}
-
-.login-submit:hover {
-      background:#DDD;
-}
-
-/*<== Styling: Login Page END ==>*/
-
 
 /*
  * Placeholder dashboard ideas

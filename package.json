@@ -1,20 +1,41 @@
 {
-  "name": "reactproject",
+  "name": "socialplatform",
   "version": "1.0.0",
   "engines": {
-      "node": "5.1.1"
-    },
+    "node": "5.1.1"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "start": "npm run build && npm run start-server",
+    "build": "npm run clean && mkdir dist && npm run build-css-html-images && npm run build-server",
+    "build-css-html-images": "gulp",
+    "build-server": "babel server -d dist_server",
+    "clean": "rm -rf dist && rm -rf dist_server",
+    "start-server": "node dist_server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ong Min and David",
+  "author": "Ong Min (@ongmin) and David (@davidsng)",
   "license": "ISC",
   "dependencies": {
+    "auth0-lock": "^8.2.3",
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^4.1.6",
+    "babel-istanbul": "^0.6.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "body-parser": "^1.15.0",
     "bootstrap": "^3.3.5",
     "browserify": "^11.0.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-history-api-fallback": "^2.0.0",
+    "express-jwt": "^3.3.0",
     "flux": "^2.0.3",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
@@ -22,13 +43,17 @@
     "gulp-open": "^1.0.0",
     "jquery": "^2.1.4",
     "lodash": "^3.10.0",
+    "mongoose": "^4.4.5",
     "object-assign": "^3.0.0",
+    "path": "^0.12.7",
     "react": "^0.14.6",
     "react-geosuggest": "^1.14.0",
     "react-router": "^0.13.5",
     "reactify": "^1.1.1",
     "standard": "^5.4.1",
     "toastr": "^2.1.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }

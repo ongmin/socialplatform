@@ -14,5 +14,7 @@ module.exports = keyMirror({
   DELETE_USER: null,
   CREATE_POST: null,
   UPDATE_POST: null,
-  DELETE_POST: null
+  DELETE_POST: null,
+  LOGIN: null,
+  LOGOUT: null
 })

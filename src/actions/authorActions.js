@@ -31,6 +31,19 @@ var AuthorActions = {
       actionType: ActionTypes.DELETE_AUTHOR,
       id: id
     })
+  },
+
+  login: function (token) {
+    Dispatcher.dispatch({
+      actionType: ActionTypes.LOGIN,
+      token: token
+    })
+  },
+
+  logout: function () {
+    Dispatcher.dispatch({
+      actionType: ActionTypes.LOGOUT
+    })
   }
 }
 

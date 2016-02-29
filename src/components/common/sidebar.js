@@ -16,7 +16,7 @@ var Header = React.createClass({
             <ul className='nav nav-sidebar'>
               <div className='sidebar-profile'>
                 <img className='profilepicture' src='./images/ProfilePicturePlaceholder.jpg'></img>
-                  <li className='sidebar-name'>Johnny Depp</li>
+                  <li className='sidebar-name'>NAME NAME</li>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </ul>

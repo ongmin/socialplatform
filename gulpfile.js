@@ -9,8 +9,8 @@ var source = require('vinyl-source-stream') // Use conventional text streams wit
 var concat = require('gulp-concat') // Concatenates files
 
 var config = {
-  port: process.env.PORT || 9005,
-  devBaseUrl: 'http://localhost',
+  // port: process.env.PORT || 9005,
+  // devBaseUrl: 'http://localhost',
   paths: {
     html: './src/*.html',
     js: [
@@ -29,24 +29,24 @@ var config = {
 }
 
 // Start a local development server
-gulp.task('connect', function () {
-  connect.server({
-    root: ['dist'],
-    port: config.port,
-    base: config.devBaseUrl,
-    livereload: true
-  })
-})
-
-gulp.task('open', ['connect'], function () {
-  gulp.src('dist/index.html')
-    .pipe(open({ uri: config.devBaseUrl + ':' + config.port + '/' }))
-})
+// gulp.task('connect', function () {
+//   connect.server({
+//     root: ['dist'],
+//     port: config.port,
+//     base: config.devBaseUrl,
+//     livereload: true
+//   })
+// })
+//
+// gulp.task('open', ['connect'], function () {
+//   gulp.src('dist/index.html')
+//     .pipe(open({ uri: config.devBaseUrl + ':' + config.port + '/' }))
+// })
 
 gulp.task('html', function () {
   gulp.src(config.paths.html)
     .pipe(gulp.dest(config.paths.dist))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 })
 
 gulp.task('js', function () {
@@ -56,7 +56,7 @@ gulp.task('js', function () {
     .on('error', console.error.bind(console))
     .pipe(source('bundle.js'))
     .pipe(gulp.dest(config.paths.dist + '/scripts'))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 })
 
 gulp.task('css', function () {
@@ -69,17 +69,19 @@ gulp.task('css', function () {
 gulp.task('images', function () {
   gulp.src(config.paths.images)
     .pipe(gulp.dest(config.paths.dist + '/images'))
-    .pipe(connect.reload())
+    // .pipe(connect.reload())
 
   // publish favicon
   gulp.src('./src/favicon.ico')
         .pipe(gulp.dest(config.paths.dist))
 })
 
-gulp.task('watch', function () {
-  gulp.watch(config.paths.html, ['html'])
-  gulp.watch(config.paths.js, ['js'])
-  gulp.watch(config.paths.css, ['css'])
-})
+// gulp.task('watch', function () {
+//   gulp.watch(config.paths.html, ['html'])
+//   gulp.watch(config.paths.js, ['js'])
+//   gulp.watch(config.paths.css, ['css'])
+// })
 
-gulp.task('default', ['html', 'js', 'css', 'images', 'open', 'watch'])
+gulp.task('default', ['html', 'js', 'css', 'images'])
+
+// gulp.task('default', ['html', 'js', 'css', 'images', 'open', 'watch'])
