@@ -38,7 +38,7 @@ var AuthorStore = assign({}, EventEmitter.prototype, {
   // User Authentication
   login: function (token) {
     if (token) {
-      this.lock.getProfile(token, (err, profile) => {
+      this.lock.getProfile(token, function (err, profile) {
         if (err) return console.error('Error loading the Profile', err)
         else {
           this.user = profile
@@ -50,7 +50,7 @@ var AuthorStore = assign({}, EventEmitter.prototype, {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify(profile)
-          }).then(res => {
+          }).then(function (res) {
             if (res.status === 404) {
               window.fetch('/users', {
                 method: 'POST',

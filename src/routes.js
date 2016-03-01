@@ -9,8 +9,8 @@ var NotFoundRoute = Router.NotFoundRoute
 // var Redirect = Router.Redirect
 
 var routes = (
-  <Route name='app' path='/' handler={require('./components/app_authenticate')}>
-    <DefaultRoute handler={require('./components/homePage')} />
+  <Route name='app' path='/' handler={require('./components/app')}>
+    <DefaultRoute handler={require('./components/authors/authorPageFeed')} />
     <NotFoundRoute handler={require('./components/notFoundPage')} />
     <Route name='home' handler={require('./components/homePage')} />
     <Route name='authors' handler={require('./components/authors/authorPage')} />
@@ -19,7 +19,7 @@ var routes = (
     <Route name='manageAuthor' path='author/:id' handler={require('./components/authors/manageAuthorPage')} />
     <Route name='about' handler={require('./components/about/aboutPage')} />
     <Route name='managePost' path='post/' handler={require('./components/users/managePostPage')} />
-    <Route name='appQuoteGenerator' path='app-quotegenerator' handler={require('./components/appQuoteGenerator')} />
+    <Route name='surprise' path='surprise' handler={require('./components/appSurprise')} />
     <Route name='addUser' path='user' handler={require('./components/users/manageProfilePage')} />
   </Route>
 )

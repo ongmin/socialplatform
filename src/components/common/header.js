@@ -22,14 +22,14 @@ var Header = React.createClass({
               <span className='icon-bar'></span>
               <span className='icon-bar'></span>
             </button>
-            <Link to='app' className='navbar-brand'>fac&#601;book</Link>
+            <Link to='app' className='navbar-brand'>letsgetsocial</Link>
           </div>
           <div id='navbar' className='navbar-collapse collapse'>
             <ul className='nav navbar-nav navbar-right'>
-              <li><Link to='app'>Home</Link></li>
-              <li><Link to='addUser'>Create Profile</Link></li>
-              <li><Link to='about'>About</Link></li>
-                <li><Authenticate className='button-loginout' idToken={this.props.idToken} profile={this.props.profile} /></li>
+              <li><Link to='surprise'><i className='fa fa-gift'></i></Link></li>
+              <li><Link to='addUser'><i className='fa fa-user'></i></Link></li>
+              <li><Link to='about'><i className='fa fa-info'></i></Link></li>
+              <li><Authenticate className='btn btn-default' idToken={this.props.idToken} profile={this.props.profile} /></li>
             </ul>
             <form className='navbar-form navbar-right'>
               <input type='text' className='form-control' placeholder='Search...'></input>

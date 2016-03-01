@@ -23,11 +23,11 @@ var Authenticate = React.createClass({
   render: function () {
     if (this.props.profile) {
       return (
-          <button className='button-loginout' onClick={this.logout}>{this.props.profile.nickname} Sign Out</button>
-      )
+          <button className='btn btn-block btn-social btn-sm btn-github' onClick={this.logout}><span className='fa fa-github'></span> Sign Out </button>
+    )
     } else {
       return (
-          <button className='button-loginout' onClick={this.login}>Sign In</button>
+          <button className='btn btn-block btn-social btn-sm btn-github' onClick={this.login}><span className='fa fa-github'></span> Sign In </button>
       )
     }
   }

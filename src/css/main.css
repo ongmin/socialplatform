@@ -3,12 +3,8 @@ body {
   padding-top: 50px;
 }
 
-.appRandomCat {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-}
+
+/*<== Patches - to be refactored ==>*/
 
 .contentSpacing {
   padding-top: 20px;
@@ -22,28 +18,11 @@ body {
   line-height: 100px;
 }
 
+/*<== Styling: Navigational Topbar ==>*/
 
-/*<== Styling: Login page ==>*/
-
-.login-container {
-  box-shadow: 2px 2px 5px #888;
-  background-color: white;
-  width: 30%;
-  height: 30vh;
-  margin: 0 auto;
-  margin-top: 20vh;
-  display: flex;
-  vertical-align: middle;
-  text-align:center;
-  display: block;
-}
-
-.login-text {
-  font: 2em;
-  font-weight: bold;
-  color: black;
-  margin-top: 20px;
-  margin-bottom: 10px;
+.navbar-fixed-top {
+  border: 0;
+  /*Hide default border to remove 1px line*/
 }
 
 /*
@@ -53,14 +32,6 @@ body {
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
-}
-
-
-/*<== Styling: Navigational Topbar ==>*/
-
-.navbar-fixed-top {
-  border: 0;
-  /*Hide default border to remove 1px line*/
 }
 
 
@@ -157,6 +128,33 @@ body {
   /*background: radial-gradient(ellipse at center, rgba(76,100,147,1) 0%,rgba(59,89,152,1) 100%);*/
 }
 
+.sidebar-profile {
+  color: #f4f4f4;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+}
+
+.sidebar-name {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.grid-images {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.grid-pic {
+  width: 33%;
+  justify-content: space-around;
+  background: 50% 50% no-repeat;
+}
+
 
 /*<== Styling: Content Area ==>*/
 
@@ -164,37 +162,24 @@ body {
   padding: 20px;
 }
 
+.main .page-header {
+  margin-top: 0;
+}
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
     padding-left: 40px;
   }
-
   .content-area {
     width: 80%;
   }
-}
-
-.main .page-header {
-  margin-top: 0;
 }
 
 /*<== Styling: Posts in Post Feed ==>*/
 
 .fa-pencil-square-o {
   font-size: 1.5em;
-}
-
-.sidebar-profile {
-  color: #f4f4f4;
-  text-align: center;
-  padding: 30px 20px 30px 20px;
-}
-
-.sidebar-name {
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
 
 .profile-summary {
@@ -205,6 +190,13 @@ body {
   margin: 0 auto;
   margin-top: 20px;
   background-color: white;
+}
+
+.profilepicture.user {
+  width: 100px;
+	height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 .postfeed-wrapper {
@@ -258,9 +250,18 @@ body {
   background-color: #8bb4e1;
 }
 
-/*
- * Placeholder dashboard ideas
- */
+
+/*<== Styling: For Surprise Cats ==>*/
+
+.appRandomCat {
+  display: flex;
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+
+/*<===== Parking Lot: Not in use =====>*/
 
 .placeholders {
   margin-bottom: 30px;

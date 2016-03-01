@@ -5,21 +5,21 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const fallback = require('express-history-api-fallback')
 // const cors = require('cors')
-// var jwt = require('express-jwt')
+var jwt = require('express-jwt')
 // const dbUri = require('./db/uri')
 const path = require('path')
 const root = path.join(__dirname, '../dist')
 
 // moongoose.connect(dbUri)
 
-// var jwtCheck = jwt({
-//   secret: new Buffer(process.env.SOCIALPLATFORM_AUTH0_SECRET, 'base64'),
-//   audience: process.env.SOCIALPLATFORM_AUTH0_ID
-// })
+var jwtCheck = jwt({
+  secret: new Buffer(process.env.SOCIALPLATFORM_AUTH0_SECRET, 'base64'),
+  audience: process.env.SOCIALPLATFORM_AUTH0_ID
+})
 
 app.use(express.static(root))
 console.log('this works')
-// app.use('/test', jwtCheck)
+app.use('/test', jwtCheck)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 // app.use(cors())

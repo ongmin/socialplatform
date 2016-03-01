@@ -15,26 +15,31 @@ var Header = React.createClass({
 
             <ul className='nav nav-sidebar'>
               <div className='sidebar-profile'>
-                <img className='profilepicture' src='./images/ProfilePicturePlaceholder.jpg'></img>
-                  <li className='sidebar-name'>NAME NAME</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img className='profilepicture user' src='./images/profile-leonardo.jpg'></img>
+                  <li className='sidebar-name'>Leonardo DiCaprio</li>
+                <p>I am a world class actor and I have been in several movies, my favourite being Gilbert Grape. #boatphobia #nevergettingmarried</p>
               </div>
+            </ul>
+
+            <ul className='nav nav-sidebar grid-images'>
+              <img className='grid-pic' src='./images/grid-1.png'></img>
+              <img className='grid-pic' src='./images/grid-2.png'></img>
+              <img className='grid-pic' src='./images/grid-3.png'></img>
+              <img className='grid-pic' src='./images/grid-4.png'></img>
+              <img className='grid-pic' src='./images/grid-5.png'></img>
+              <img className='grid-pic' src='./images/grid-6.png'></img>
+              <img className='grid-pic' src='./images/grid-7.png'></img>
+              <img className='grid-pic' src='./images/grid-8.png'></img>
+              <img className='grid-pic' src='./images/grid-9.png'></img>
             </ul>
 
             <ul className='nav nav-sidebar'>
               <li className='sidebar-text'>Your Content</li>
-              <li className='active'><a href='#'>Welcome <span className='sr-only'>(current)</span></a></li>
-                <li><Link to='authorsfeed'>Post Feed</Link></li>
-                <li><Link to='addAuthor'>Create Post</Link></li>
-                <li><Link to='authors'>Super Admin</Link></li>
+              <li><Link to='authorsfeed'>Post Feed</Link></li>
+              <li><Link to='addAuthor'>Create Post</Link></li>
+              <li><Link to='authors'>Super Admin</Link></li>
             </ul>
 
-            <ul className='nav nav-sidebar'>
-                <li className='sidebar-text'>Your Apps</li>
-                <li><Link to='appQuoteGenerator'>Random Cat</Link></li>
-                <li><Link to='app'>Random App</Link></li>
-                <li><Link to='app'>Random App</Link></li>
-            </ul>
           </div>
 
         </div>
