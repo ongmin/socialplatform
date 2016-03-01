@@ -1,10 +1,22 @@
-'use strict'
+// 'use strict'
 
 var Dispatcher = require('../dispatcher/appDispatcher')
 var AuthorApi = require('../api/authorApi')
 var ActionTypes = require('../constants/actionTypes')
 
 var AuthorActions = {
+  login: function (token) {
+    Dispatcher.dispatch({
+      actionType: ActionTypes.LOGIN,
+      token: token
+    })
+  },
+  logout: function () {
+    Dispatcher.dispatch({
+      actionType: ActionTypes.LOGOUT
+    })
+  },
+
   createAuthor: function (author) {
     var newAuthor = AuthorApi.saveAuthor(author)
 

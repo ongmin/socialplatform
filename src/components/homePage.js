@@ -4,6 +4,7 @@ var React = require('react')
 var Router = require('react-router')
 var Link = Router.Link
 
+
 var Home = React.createClass({
   showLock: function () {
     // We receive lock from the parent component in this case

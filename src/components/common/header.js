@@ -3,9 +3,13 @@
 var React = require('react')
 var Router = require('react-router')
 var Link = Router.Link
-// var Authenticate = require('./authenticate')
+var Authenticate = require('./authenticate')
 
 var Header = React.createClass({
+  propTypes: {
+    profile: React.PropTypes.object,
+    idToken: React.PropTypes.string
+  },
   render: function () {
     return (
 
@@ -25,6 +29,7 @@ var Header = React.createClass({
               <li><Link to='app'>Home</Link></li>
               <li><Link to='addUser'>Create Profile</Link></li>
               <li><Link to='about'>About</Link></li>
+                <li><Authenticate className='button-loginout' idToken={this.props.idToken} profile={this.props.profile} /></li>
             </ul>
             <form className='navbar-form navbar-right'>
               <input type='text' className='form-control' placeholder='Search...'></input>

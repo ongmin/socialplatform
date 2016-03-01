@@ -1,5 +1,7 @@
+'use strict'
+
 var React = require('react')
-var Actions = require('../../actions/Actions')
+var Actions = require('../../actions/authorActions')
 
 var Authenticate = React.createClass({
   propTypes: {
@@ -9,7 +11,6 @@ var Authenticate = React.createClass({
   contextTypes: {
     router: React.PropTypes.func.isRequired
   },
-
   login: function () {
     Actions.login(this.props.idToken)
   },

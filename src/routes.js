@@ -12,6 +12,7 @@ var routes = (
   <Route name='app' path='/' handler={require('./components/app_authenticate')}>
     <DefaultRoute handler={require('./components/homePage')} />
     <NotFoundRoute handler={require('./components/notFoundPage')} />
+    <Route name='home' handler={require('./components/homePage')} />
     <Route name='authors' handler={require('./components/authors/authorPage')} />
     <Route name='authorsfeed' handler={require('./components/authors/authorPageFeed')} />
     <Route name='addAuthor' path='author' handler={require('./components/authors/manageAuthorPage')} />
